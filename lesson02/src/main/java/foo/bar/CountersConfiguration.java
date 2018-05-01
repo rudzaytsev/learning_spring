@@ -1,8 +1,11 @@
 package foo.bar;
 
+import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
+
+import static org.springframework.beans.factory.config.ConfigurableBeanFactory.*;
 
 /**
  * Created by rudolph on 01.05.18.
@@ -17,7 +20,7 @@ public class CountersConfiguration {
   }
 
   @Bean
-  @Scope("prototype")
+  @Scope(SCOPE_PROTOTYPE)
   public Counter prototypeCounter() {
     return new Counter();
   }
