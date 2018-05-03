@@ -1,4 +1,4 @@
-package foo.bar.baz;
+package foo.baz;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;

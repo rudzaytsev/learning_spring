@@ -1,4 +1,4 @@
-package foo.bar.baz;
+package foo.baz;
 
 import foo.bar.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;

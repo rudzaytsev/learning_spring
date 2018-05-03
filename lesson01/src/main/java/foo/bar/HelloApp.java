@@ -1,6 +1,6 @@
 package foo.bar;
 
-import foo.bar.baz.HelloConfig;
+import foo.baz.HelloConfig;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -19,9 +19,6 @@ public class HelloApp {
     else if (args[0].equals("java")) {
       initInitApplicationContextFromJavaConfig();
     }
-
-
-
   }
 
   private static void initInitApplicationContextFromJavaConfig() {
